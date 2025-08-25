@@ -3,10 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>My Portfolio</title>
 </head>
 <body>
-    <h1>Coding projects portfolio</h1>
-    <p>Hello! My name is Razvan and you can access my projects library <a href="pages/library.html">here</a>.</p>
+    <script>
+        const pi = 3.14;
+        pi = 10;
+        console.log(pi);
+    </script>
+    <div class="page">
+        <div class="bg-rift" aria-hidden="true"></div>
+        <div class="navbar">
+            <div class="navbar-buttons">
+                <div class="navbar-button"><a href="#projects">Projects</a></div>
+                <div class="navbar-button"><a href="#about">About</a></div>
+                <div class="navbar-button"><a href="#about">Contact</a></div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Hi! My name is Razvan!</h1>
+                <p>Engineer. Builder. Problem solver. Student. I help turn ideas into software.</p>
+            </div>
+            <div class="hero-image">
+                <svg width="200px" height="200px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M510.75072 539.4944m-472.18176 0a472.18176 472.18176 0 1 0 944.36352 0 472.18176 472.18176 0 1 0-944.36352 0Z" fill="#FF7100" /><path d="M508.78976 219.22816c-20.6848-44.63616 19.46624-107.20256 89.68704-139.74528 70.21568-32.54272 143.90784-22.7328 164.59776 21.90336L508.78976 219.22816z" fill="#30C03F" /><path d="M508.78976 219.22816c20.6848 44.63616 94.37696 54.44608 164.59776 21.90336 70.21568-32.54272 110.37184-95.104 89.68704-139.74528L508.78976 219.22816z" fill="#97CF43" /><path d="M370.32448 220.49792m-23.6544 0a23.6544 23.6544 0 1 0 47.3088 0 23.6544 23.6544 0 1 0-47.3088 0Z" fill="#FFA05F" /><path d="M254.208 313.6768m-23.6544 0a23.6544 23.6544 0 1 0 47.3088 0 23.6544 23.6544 0 1 0-47.3088 0Z" fill="#FFA05F" /><path d="M743.41376 281.06752m-23.6544 0a23.6544 23.6544 0 1 0 47.3088 0 23.6544 23.6544 0 1 0-47.3088 0Z" fill="#FFA05F" /><path d="M859.53024 388.224m-23.6544 0a23.6544 23.6544 0 1 0 47.3088 0 23.6544 23.6544 0 1 0-47.3088 0Z" fill="#FFA05F" /><path d="M767.06816 434.816m-23.6544 0a23.6544 23.6544 0 1 0 47.3088 0 23.6544 23.6544 0 1 0-47.3088 0Z" fill="#FFA05F" /><path d="M631.59296 346.65472m-23.6544 0a23.6544 23.6544 0 1 0 47.3088 0 23.6544 23.6544 0 1 0-47.3088 0Z" fill="#FFA05F" /><path d="M878.16704 565.26848m-23.6544 0a23.6544 23.6544 0 1 0 47.3088 0 23.6544 23.6544 0 1 0-47.3088 0Z" fill="#FFA05F" /><path d="M504.02304 224.35328s-27.4944-173.22496-8.24832-192.47104 33.90976-12.17024 41.24672-5.49888c15.12448 13.7472-16.49664 159.47776-16.49664 178.72384 0 19.24608-8.24832 38.49216-16.50176 19.24608z" fill="#5A4530" /><path d="M460.36992 221.66016s33.19808-5.24288 54.16448 0c20.9664 5.24288 22.71232 6.9888 26.20928 12.23168 3.49184 5.24288-24.45824 3.49184-24.45824 3.49184s-19.22048-5.24288-31.44704-5.24288H463.872s-13.98272-5.23776-3.50208-10.48064z" fill="#5A4530" /></svg>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-icons">
+            <a href="">
+            <svg class="hicon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.55 0-.27-.01-1.16-.02-2.11-3.2.69-3.87-1.54-3.87-1.54-.53-1.36-1.29-1.72-1.29-1.72-1.06-.72.08-.71.08-.71 1.18.08 1.81 1.21 1.81 1.21 1.04 1.8 2.73 1.28 3.4.98.1-.75.41-1.28.75-1.57-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.2 11.2 0 0 1 2.89-.39c.98 0 1.97.13 2.89.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.69 5.38-5.25 5.66.42.36.8 1.07.8 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.21.66.8.55A10.98 10.98 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+            </svg>
+            </a>
+            <a href="https://www.abhisheksah.dev">
+            <svg class="hicon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path d="M20.45 20.45h-3.554v-5.568c0-1.327-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.666H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.369-1.852 3.6 0 4.266 2.37 4.266 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.45H3.56V9h3.554v11.45zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.546C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.273V1.727C24 .774 23.2 0 22.225 0z"/>
+            </svg>
+            </a>
+            <a href="">
+            <svg class="hicon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>    
+            </a>
+            <a href="">
+            <button class="hbutton">Get in touch
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+                    <path d="M8.29289 2.29289C8.68342 1.90237 9.31658 1.90237 9.70711 2.29289L14.2071 6.79289C14.5976 7.18342 14.5976 7.81658 14.2071 8.20711L9.70711 12.7071C9.31658 13.0976 8.68342 13.0976 8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L11 8.5H1.5C0.947715 8.5 0.5 8.05228 0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H11L8.29289 3.70711C7.90237 3.31658 7.90237 2.68342 8.29289 2.29289Z"/>
+                </svg>
+            </button>
+            </a>
+            </div>
+        </div>
+        <section id="projects">
+        <h4 class="projects-header">PROJECTS</h4>
+        <div class="projects">
+            <div class="card">
+                <div class="card-header">
+                    <h3>QT App</h3>
+                    <a class="ghlink" href="https://github.com/rzv1/Book-manager-Qt">
+                    <span class="badge">View on GitHub
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"viewBox="0 0 200.981 200.981">
+                        <g transform="scale(-1,1) translate(-200.981,0)">
+                        <polygon class="card-arrow" style="fill:#ffffff;" 
+                        points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                        </g>
+                    </svg>
+                    </span>
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <h4>Work includes:</h4>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Observer design pattern</li>
+                        <li>QT framework</li>
+                    </ul>
+                    <div class="pills">
+                        <span class="pill">C++</span>
+                        <span class="pill">Qt</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>C CLI app</h3>
+                    <a class="ghlink" href="https://github.com/rzv1/C-CLI_app">
+                    <span class="badge">View on GitHub
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10"viewBox="0 0 200.981 200.981">
+                        <g transform="scale(-1,1) translate(-200.981,0)">
+                        <polygon style="fill:#ffffff;" 
+                        points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                        </g>
+                    </svg>
+                    </span>
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <h4>Work includes:</h4>
+                    <ul>
+                        <li>CRUD operations</li>
+                        <li>Layered arhitecture</li>
+                        <li>Simple CLI</li>
+                    </ul>
+                    <div class="pills">
+                        <span class="pill">Python</span>
+                    </div>
+                </div>
+            </div>
+
+                        <div class="card">
+                <div class="card-header">
+                    <h3>Web Portfolio</h3>
+                    <a class="ghlink" href="https://github.com/rzv1/portfolio-website">
+                    <span class="badge">View on GitHub
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10"viewBox="0 0 200.981 200.981">
+                        <g transform="scale(-1,1) translate(-200.981,0)">
+                        <polygon style="fill:#ffffff;" 
+                        points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                        </g>
+                    </svg>
+                    </span>
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <h4>Work includes:</h4>
+                    <ul>
+                        <li>HTML structure</li>
+                        <li>Interactive CSS</li>
+                        <li>Javascript optimizations</li>
+                    </ul>
+                    <div class="pills">
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                        <span class="pill">Javascript</span>
+                    </div>
+                </div>
+            </div>
+        </div></section>
+        <section id="about">
+        <div class="about">
+            <h1 class="projects-header">ABOUT</h3>
+            <h3 class="about-container">I am a passionate programmer currently studying at Babes-Boyal University at computer science specialty.<br>I am looking for inovative learning and working oportunities and I am constantly improving my skills working on open-source projects and college assignments.</h3>
+        </div>
+        </section>
+        <section id="contact">
+        <div class="about">
+            <h1 class="projects-header">CONTACT</h3>
+            <h3 class="about-container">You can contact me using the links above.</h3>
+        </div>
+        </section>
+        <div class="footer">
+            <p>Copyright original design by Rzv 2025.</p>
+        </div>
+    </div>
 </body>
 </html>
