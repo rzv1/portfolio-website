@@ -1,0 +1,162 @@
+:root {
+    --bg:#1F1F1F;
+    --mid:#262626;
+    --light:#ffffff;
+    --accent: #e36613;
+    --maxw:800px;
+    --proj-maxw: 1200px;
+    --radius:30px;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+}
+
+.bg-icon{
+    position: absolute;
+    z-index: 0;
+    filter: chroma(2);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@property --mouse-x {
+  syntax: '<percentage>';
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --mouse-y {
+  syntax: '<percentage>';
+    inherits: false;
+    initial-value: 50%;
+}
+
+.bg-rift{
+    position:fixed;
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+    inset: -20% -10% -20% -10%;
+    pointer-events: none;
+    opacity: .65;
+    filter: blur(40px);
+    top: 50%;
+    transition: --mouse-x 0.6s ease-out, --mouse-y 0.6s ease-out;
+    will-change: --mouse-x, --mouse-y;
+    background:
+            radial-gradient(60rem 60rem at calc(0.1 * var(--mouse-x) + 0.9 * 95%) calc(0.2 * var(--mouse-y) - 0.8 * 60%), #FF7A1A 35%, transparent 60%),
+            radial-gradient(40rem 40rem at calc(0.1 * var(--mouse-x) - 0.9 * 10%) calc(0.1 * var(--mouse-y) - 0.9 * 10%), #FF7A1A 30%, transparent 65%),
+            conic-gradient(from 220deg at calc(0.1 * var(--mouse-x) + 0.9 * 51%) calc(0.1 * var(--mouse-y) + 0.9 * 25%), rgba(255,122,26,.8) 0 35deg, transparent 35deg 360deg);
+}
+
+@media screen and (max-width: 950px){
+    .bg-rift{
+        top: 60%;
+    }
+}
+
+.navbar{
+    --x: 0;
+    --y: 0;
+    background-color:var(--mid);
+    display: flex;
+    max-width: 340px;
+    overflow: hidden;
+    margin: 20px auto 100px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    color:#d4d4d4;
+    transition: transform 0.8s ease;
+}
+
+.navbar:hover{
+    transform: skew(calc(var(--x) * 1deg), calc(var(--y) * 1deg));
+    border: 2px solid #d76112ab;
+    transition: transform 0.8s ease;
+}
+
+.navbar .navbar-buttons{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar .navbar-buttons .navbar-button{
+    padding: 2em;
+    display: block;
+}
+
+.navbar .navbar-buttons .navbar-button:hover{
+    background-color: rgba(227, 102, 19, 0.8);
+}
+
+.navbar-button a {
+    text-decoration: none;
+    color:#cfcfcf;
+    position: relative;
+    transition: color 0.6s ease;
+}
+
+.navbar-button:hover a{
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-button a::after {
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    transform: scaleX(0);
+    height: 2px;
+    width: 100%;
+    background:white;
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.navbar-button:hover a::after{
+    transform: scaleX(0.8);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    visibility: hidden;
+}
+
+.reveal:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.reveal:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+}
+
+.glow-card {
+    background: #0a0a0a;
+    border: 1px solid rgba(255, 126, 35, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5),
+    0 0 15px rgba(255, 126, 35, 0.1);
+    margin-top: 20px;
+}
