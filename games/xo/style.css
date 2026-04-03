@@ -1,0 +1,71 @@
+p{
+    font-size: 30px;
+}
+
+body{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    wrap-option: 1;
+    margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.visible{
+    opacity: 1;
+}
+
+.hidden{
+    display: none;
+}
+
+button {
+    padding: 5px;
+}
+#PVP, #PVC {
+    background-color: lightblue;
+    border-radius: 25px;
+}
+
+#grid{
+    display: inline-grid;
+    grid-template: 50px 50px 50px / 50px 50px 50px;
+    background-color: antiquewhite;
+    grid-gap: 5px;
+    padding: 10px;
+    box-shadow: 4px 3px rgba(128, 128, 128, 0.151);
+    position: absolute;
+}
+
+#grid div{
+    display: flex;
+    background-color: rgba(0, 255, 255, 0.445);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+}
+
+#reset{
+    margin-bottom: 100px;
+}

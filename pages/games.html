@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/games.css">
+  <title>Projects library</title>
+</head>
+<body>
+<div class="page">
+  <div class="bg-rift" aria-hidden="true"></div>
+  <div class="navbar">
+    <div class="navbar-buttons">
+      <div class="navbar-button"><a href="projects.html">Projects</a></div>
+      <div class="navbar-button"><a href="index.html">Home</a></div>
+      <div class="navbar-button"><a href="games.html">Games</a></div>
+    </div>
+  </div>
+  <section class="arcade-section">
+<!--    <h2 class="glow-text">INTERACTIVE GAMES</h2>-->
+
+    <div class="game-selector">
+      <button class="game-btn" onclick="loadGame('memorycards')">
+        <i class="icon">🃟</i> MemoryCards.js
+      </button>
+      <button class="game-btn" onclick="loadGame('xo')">
+        <i class="icon">ⓧ</i> Xo.js
+      </button>
+      <button class="game-btn" onclick="loadGame('sketch')">
+        <i class="icon">⚇</i> Sketch.js
+      </button>
+      <button class="game-btn active" onclick="loadGame('calculator')">
+        <i class="icon">✖️</i> Calculator.js
+      </button>
+    </div>
+
+    <div class="terminal-container glow-card">
+      <div class="terminal-header">
+        <span id="current-game-title">GAME TERMINAL: MemoryCards.js</span>
+        <div class="dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="terminal-screen">
+        <iframe id="game-frame" src="../games/calculator/index.html"></iframe>
+      </div>
+    </div>
+  </section>
+  <script src="../scripts/games.js"></script>
+</div>
+</body>
+</html>

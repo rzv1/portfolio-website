@@ -1,0 +1,67 @@
+.grid{
+    display: grid;
+    height: 550px;
+    width: 550px;
+    gap: 1px;
+}
+
+.command-panel{
+    background-color: rgb(56, 56, 56);
+    border-radius: 4px;
+    padding: 30px;
+    text-align: center;
+}
+
+.page{
+    display: flex;
+    gap: 50px;
+    margin: 50px;
+    align-items: center;
+    color: white;
+}
+
+input {
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+.color-pallete{
+    display: grid;
+    grid-template: 20px 20px 20px / 20px 20px 20px;
+    gap: 3px;
+    background-color: rgb(156, 157, 157) ;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.selected{
+    border: 2px solid black;
+}
+
+.color{
+    border-radius: 4px;
+}
+.eraser{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.cyan{
+    background-color: cyan;
+}
+.magenta{
+    background-color: magenta;
+}

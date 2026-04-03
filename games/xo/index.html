@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Tic Tac Toe</p>
+<div class="buttonsUpper">
+    <button id="PVC">Play computer</button>
+    <button id="PVP">Play player2</button>
+</div>
+<div class="content">
+    <div>
+        <h5 id="player1">Player: 0</h5>
+    </div>
+    <div id="grid">
+        <div class="cell" data-pos="0"></div>
+        <div class="cell" data-pos="1"></div>
+        <div class="cell" data-pos="2"></div>
+        <div class="cell" data-pos="3"></div>
+        <div class="cell" data-pos="4"></div>
+        <div class="cell" data-pos="5"></div>
+        <div class="cell" data-pos="6"></div>
+        <div class="cell" data-pos="7"></div>
+        <div class="cell" data-pos="8"></div>
+    </div>
+    <div>
+        <h5 id="player2"></h5>
+    </div>
+</div>
+<p id="info" style="font-size: 20px; margin-top: 100px; font-weight: 100;"></p>
+<div class="buttons">
+    <button id="reset">Reset</button>
+    <button id="changeNames">Change Names</button>
+</div>
+<div>
+    <form id="changeNamesForm">
+        <input type="text" id="player1New" placeholder="Player1 name">
+        <input type="text" id="player2New" placeholder="Player2 name">
+        <button type="submit">Save</button>
+    </form>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

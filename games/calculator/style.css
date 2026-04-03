@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 200px;
+}
+
+.calc{
+    position: relative;
+    text-align: center;
+    width: 200px;
+    background-color: rgba(47, 47, 47, 0.625);
+    border-radius: 5px;
+}
+
+.display{
+    color: white;
+    font-size: 20px;
+    height: 60px;
+    padding-top: 40px;
+    background-color: rgb(76, 75, 75);
+}
+
+.btn{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px 0px;
+    background-color: rgb(75, 75, 74);
+    cursor: pointer;
+}
+
+.buttons{
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.reset{
+    background-color: rgb(43, 42, 42);
+}
+
+.gold{
+    background-color: goldenrod;
+}
