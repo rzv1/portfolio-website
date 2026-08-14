@@ -1,91 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Management Avalonia C# - Razvan Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../styles/project.css">
-    <title>Contest Management Java</title>
     <link rel="icon" href="../images/rzv-logo-rzv-letter-rzv-letter-logo-design-initials-rzv-logo-linked-with-circle-uppercase-monogram-logo-rzv-typography-technology-business-real-estate-brand_229120-71620.avif">
 </head>
 <body>
-<div class="bg-rift" aria-hidden="true"></div>
-<div class="navbar">
-    <div class="navbar-buttons">
-        <div class="navbar-button"><a href="projects.html">Projects</a></div>
-        <div class="navbar-button"><a href="../index.html">Home</a></div>
-        <div class="navbar-button"><a href="games.html">Games</a></div>
-    </div>
-</div>
-<main class="project-page">
-    <p class="breadcrumb"><a class="breadcrumb" href="projects.html">Projects</a> <span class="breadcrumb-inner">> Contest Management App C#</span></p>
-    <div class="hero-text">
-        <h1>Contest Management App C#</h1>
-    </div>
-    <div class="content-flex">
-        <div class="content-component-left">
+<canvas class="bg-rift" aria-hidden="true"></canvas>
+<div class="page">
+    <!-- Bauhaus Navbar -->
+    <nav class="navbar">
+        <div class="navbar-buttons">
+            <div class="navbar-button active"><a href="projects.html">Projects</a></div>
+            <div class="navbar-button"><a href="../index.html">Home</a></div>
+            <div class="navbar-button"><a href="games.html">Games</a></div>
+        </div>
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+            <!-- Icon injected by main.js -->
+        </button>
+    </nav>
+
+    <main class="project-page">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-wrap">
+            <div class="breadcrumb">
+                <a href="projects.html">Projects</a> / <span class="breadcrumb-inner">Contest Management Avalonia C#</span>
+            </div>
+        </div>
+
+        <!-- Bauhaus Project Hero Card -->
+        <section class="project-hero reveal">
+            <div class="project-hero-tag">
+                <span class="bauhaus-badge">
+                    <span class="bauhaus-dot"></span> C# & AVALONIA UI DESKTOP APP
+                </span>
+            </div>
+            <h1>Contest Management <span class="accent-text">Avalonia C#</span></h1>
+            <p>A cross-platform Avalonia UI application written in C# (.NET framework), configured with Log4net logging pipelines and powered by local SQLite database persistence.</p>
+            
+            <div class="project-hero-actions">
+                <a class="ghlink" href="https://github.com/rzv1/C-CLI_app" target="_blank">
+                    <span class="badge" style="padding: 10px 18px; font-size: 0.9rem;">
+                        View Source Code
+                        <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981" style="width: 12px; height: 12px;">
+                            <g transform="scale(-1,1) translate(-200.981,0)">
+                                <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Architecture & Implementation Section -->
+        <div class="section-header-wrap reveal">
+            <span class="bauhaus-square"></span>
+            <h2 class="section-header">Architecture & Implementation</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="project-grid reveal">
+            <!-- Overview Card -->
             <div class="card">
                 <div class="card-header">
-                    <h4>Project Overview</h4>
+                    <h3>Overview & Key Highlights</h3>
                 </div>
                 <div class="card-body">
-                    <p>Avalonia desktop application for a compulsory university assignment. It is built using dotnet (nuGet),
-                        logged using log4c2 and powered by sqlite database.
-
-                    </p>
-                </div>
-            </div>
-            <div class="content-image-component">
-                <h3>Log4net</h3>
-                <img class="image-container" src="../images/log4j.png">
-            </div>
-
-            <div class="content-image-component hidden">
-                <h3>TBD</h3>
-                <img class="image-container" src="../images/pexels-technobulka-10816120.jpg">
-            </div>
-
-        </div>
-        <div class="content-component-right">
-            <video autoplay loop muted playsinline class="image-container">
-                <source src="../images/JavaRec.mov" type="video/mp4">
-            </video>
-            <div>
-                <h3>Tech stack</h3>
-                <div class="tech-slider">
-                    <div class="tech-track">
-                        <div class="tech-item">
-                            <img src="../images/c-sharp.png">
-                        </div>
-                        <div class="tech-item">
-                            <img src="../images/Avalonia_logo.svg.png">
-                        </div>
-                        <div class="tech-item">
-                            <img src="../images/icon">
-                        </div>
-                        <div class="tech-item">
-                            <img src="../images/free-microsoft-dotnet-icon-svg-download-png-1175178.webp">
-                        </div>
-                        <div class="tech-item">
-                            <img src="../images/c-sharp.png">
-                        </div>
-                        <div class="tech-item">
-                            <img src="../images/Avalonia_logo.svg.png">
-                        </div>
-                        <div class="tech-item">
-                            <img src="../images/icon">
-                        </div>
-                        <div class="tech-item">
-                            <img src="../images/free-microsoft-dotnet-icon-svg-download-png-1175178.webp">
-                        </div>
+                    <p>Designed for cross-platform desktop execution using modern C# XAML UI techniques.</p>
+                    <ul>
+                        <li><strong>GUI Framework:</strong> Avalonia UI multi-platform framework</li>
+                        <li><strong>Runtime Ecosystem:</strong> .NET 8 / C# with NuGet dependency management</li>
+                        <li><strong>Logging Infrastructure:</strong> Log4net file logger integration</li>
+                        <li><strong>Database Layer:</strong> SQLite data store with repository pattern</li>
+                    </ul>
+                    <div class="pills" style="margin-top: auto;">
+                        <span class="pill">C#</span>
+                        <span class="pill">.NET</span>
+                        <span class="pill">Avalonia</span>
+                        <span class="pill">Log4net</span>
+                        <span class="pill">SQLite</span>
                     </div>
                 </div>
             </div>
+
+            <!-- Log4net Architecture Media Box -->
+            <div class="media-box">
+                <div class="media-box-header">Log4net Architecture Diagram</div>
+                <img class="image-container" src="../images/log4j.png" alt="Log4net Architecture">
+            </div>
         </div>
-    </div>
-</main>
+
+        <!-- Video Showcase Section -->
+        <div class="section-header-wrap reveal">
+            <span class="bauhaus-dot"></span>
+            <h2 class="section-header">Recorded Video Demo</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="media-box reveal" style="margin-bottom: 50px;">
+            <div class="media-box-header">Avalonia Desktop Application Demo</div>
+            <video autoplay loop muted playsinline class="image-container">
+                <source src="../images/JavaRec.mov" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Technology Cards Grid Section -->
+        <div class="section-header-wrap reveal">
+            <span class="bauhaus-dot"></span>
+            <h2 class="section-header">Technologies & Architecture</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="tech-grid reveal">
+            <div class="tech-3d-card">
+                <div class="tech-card-top">
+                    <img src="../images/c-sharp.png" alt="C#" class="tech-icon-img">
+                    <span class="tech-tag">Core Language</span>
+                </div>
+                <h4>C# ES & .NET 8</h4>
+                <p>Strongly-typed object-oriented architecture leveraging LINQ, async/await, and generics.</p>
+            </div>
+
+            <div class="tech-3d-card">
+                <div class="tech-card-top">
+                    <img src="../images/Avalonia_logo.svg.png" alt="Avalonia UI" class="tech-icon-img">
+                    <span class="tech-tag">Cross-Platform</span>
+                </div>
+                <h4>Avalonia UI</h4>
+                <p>Modern cross-platform desktop UI framework with reactive data-binding and XAML styling.</p>
+            </div>
+
+            <div class="tech-3d-card">
+                <div class="tech-card-top">
+                    <img src="../images/free-microsoft-dotnet-icon-svg-download-png-1175178.webp" alt=".NET Ecosystem" class="tech-icon-img">
+                    <span class="tech-tag">Runtime</span>
+                </div>
+                <h4>.NET Ecosystem</h4>
+                <p>High-performance cross-platform execution runtime with NuGet package management.</p>
+            </div>
+
+            <div class="tech-3d-card">
+                <div class="tech-card-top">
+                    <img src="../images/SQLite370.svg.png" alt="SQLite" class="tech-icon-img">
+                    <span class="tech-tag">Database</span>
+                </div>
+                <h4>SQLite Persistence</h4>
+                <p>Local relational database storage integrated via ADO.NET / SQLite connection providers.</p>
+            </div>
+        </div>
+
+        <!-- Tech Stack Slider Box -->
+        <div class="tech-slider-box reveal">
+            <div class="tech-slider-header">Technologies Used</div>
+            <div class="tech-slider">
+                <div class="tech-track">
+                    <div class="tech-item"><img src="../images/c-sharp.png" alt="C#"></div>
+                    <div class="tech-item"><img src="../images/Avalonia_logo.svg.png" alt="Avalonia"></div>
+                    <div class="tech-item"><img src="../images/free-microsoft-dotnet-icon-svg-download-png-1175178.webp" alt=".NET"></div>
+                    <!-- Loop duplicates for continuous scroll -->
+                    <div class="tech-item"><img src="../images/c-sharp.png" alt="C#"></div>
+                    <div class="tech-item"><img src="../images/Avalonia_logo.svg.png" alt="Avalonia"></div>
+                    <div class="tech-item"><img src="../images/free-microsoft-dotnet-icon-svg-download-png-1175178.webp" alt=".NET"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Rzv. Built with Bauhaus Minimalism & Clean Code.</p>
+    </footer>
+</div>
+
 <dialog id="lightbox">
     <button id="close-lightbox">&times;</button>
-    <img src="" id="lightbox-img">
+    <img src="" id="lightbox-img" alt="Enlarged preview">
 </dialog>
 <script src="../scripts/main.js"></script>
 </body>
