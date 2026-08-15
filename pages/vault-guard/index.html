@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaultGuard Security App - Razvan Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../shared/css/project-page.css">
+    <link rel="icon" href="../images/rzv-logo-rzv-letter-rzv-letter-logo-design-initials-rzv-logo-linked-with-circle-uppercase-monogram-logo-rzv-typography-technology-business-real-estate-brand_229120-71620.avif">
+    <!-- Animation & GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <canvas class="bg-rift" aria-hidden="true"></canvas>
+    <div class="page">
+        <!-- Bauhaus Navbar -->
+        <nav class="navbar">
+            <div class="navbar-buttons">
+                <div class="navbar-button active"><a href="../projects/index.html">Projects</a></div>
+                <div class="navbar-button"><a href="../../index.html">Home</a></div>
+                <div class="navbar-button"><a href="../games/index.html">Games</a></div>
+            </div>
+            <button class="theme-toggle-btn" aria-label="Toggle theme">
+                <!-- Icon injected by main.js -->
+            </button>
+        </nav>
+
+        <main class="project-page">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb-wrap">
+                <div class="breadcrumb">
+                    <a href="../projects/index.html">Projects</a> / <span class="breadcrumb-inner">VaultGuard Security App</span>
+                </div>
+            </div>
+
+            <!-- Bauhaus Project Hero Card -->
+            <section class="project-hero reveal">
+                <div class="project-hero-tag">
+                    <span class="bauhaus-badge">
+                        <span class="bauhaus-dot"></span> SECURE VAULT & ASSET PROTECTION SYSTEM
+                    </span>
+                </div>
+                <h1>VaultGuard <span class="accent-text">Security App</span></h1>
+                <p>VaultGuard is a high-security cryptographic vault application built with layered Java architecture, hardware key validation, encrypted SQLite storage, and real-time audit logging.</p>
+                
+                <div class="project-hero-actions">
+                    <a class="ghlink" href="https://github.com/rzv1/Book-manager-Qt" target="_blank">
+                        <span class="badge" style="padding: 10px 18px; font-size: 0.9rem;">
+                            View Source Code
+                            <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981" style="width: 12px; height: 12px;">
+                                <g transform="scale(-1,1) translate(-200.981,0)">
+                                    <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Architecture & Details Section -->
+            <div class="section-header-wrap reveal">
+                <span class="bauhaus-square"></span>
+                <h2 class="section-header">Architecture & Security Details</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-grid reveal">
+                <!-- Overview Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Overview & Key Highlights</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Engineered for zero-knowledge data isolation, hardware key verification, and encrypted secret storage.</p>
+                        <ul>
+                            <li><strong>Cryptography Engine:</strong> AES-256 GCM cipher pipeline & Key Derivation (PBKDF2)</li>
+                            <li><strong>UI Layer:</strong> JavaFX desktop environment with hardware unlock prompts</li>
+                            <li><strong>Logging Audit:</strong> Encrypted Log4j2 file appenders for authentication tracking</li>
+                            <li><strong>Data Storage:</strong> Embedded SQLCipher encrypted relational database</li>
+                        </ul>
+                        <div class="pills" style="margin-top: auto;">
+                            <span class="pill">Java</span>
+                            <span class="pill">JavaFX</span>
+                            <span class="pill">AES-256</span>
+                            <span class="pill">Gradle</span>
+                            <span class="pill">Log4j2</span>
+                            <span class="pill">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Log4j System Architecture Media Box -->
+                <div class="media-box">
+                    <div class="media-box-header">Log4j Security Audit Infrastructure</div>
+                    <img class="image-container" src="../contest-management-java/resources/log4j.png" alt="Log4j Security Audit">
+                </div>
+            </div>
+
+            <!-- PINNED SCROLL-DRIVEN DYNAMIC SHOWCASE SECTION -->
+            <div class="section-header-wrap reveal">
+                <span class="bauhaus-dot"></span>
+                <h2 class="section-header">Interactive Vault Architecture Showcase</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <section class="scroll-showcase-section reveal">
+                <div class="showcase-sticky-wrap">
+                    
+                    <!-- HUD CONTROLLER BAR -->
+                    <div class="showcase-hud">
+                        <div class="hud-top-row">
+                            <span class="hud-phase-badge">01 / 03</span>
+                            <div class="hud-phase-title">CRYPTO ENGINE & CIPHER PIPELINE</div>
+                        </div>
+                        <div class="hud-progress-bar">
+                            <div class="hud-progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <!-- 3D STAGE VIEWPORT -->
+                    <div class="showcase-viewport">
+
+                        <!-- STAGE 1: CRYPTO DIAGRAMS -->
+                        <div class="showcase-stage stage-diagrams">
+                            <div class="stage-diagrams-grid">
+                                <div class="diagram-3d-card">
+                                    <div class="diagram-header">01 | Encryption & Cipher Pipeline</div>
+                                    <img src="../harvest/resources/diagrams/UseCase.png" alt="Cipher Pipeline Diagram" class="diagram-img image-zoomable">
+                                </div>
+                                <div class="diagram-3d-card">
+                                    <div class="diagram-header">02 | Key Exchange Sequence</div>
+                                    <img src="../harvest/resources/diagrams/ConfirmOrder.png" alt="Key Exchange Sequence" class="diagram-img image-zoomable">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STAGE 2: VAULT INTERFACES -->
+                        <div class="showcase-stage stage-interfaces">
+                            <div class="stage-interfaces-wrap">
+                                <div class="interface-group group-customer active">
+                                    <div class="interface-group-header">
+                                        <span class="interface-group-title">Encrypted Storage & Vault Portal</span>
+                                        <span class="interface-badge">Vault Portal</span>
+                                    </div>
+                                    <div class="interface-grid-3col">
+                                        <div class="interface-card-item">
+                                            <div class="interface-card-top">01 | Master Key Unlock</div>
+                                            <div class="interface-card-body">
+                                                <img src="../harvest/resources/interface/manager1.png" alt="Master Key Unlock" class="image-zoomable">
+                                            </div>
+                                        </div>
+                                        <div class="interface-card-item">
+                                            <div class="interface-card-top">02 | Secret Vault Storage</div>
+                                            <div class="interface-card-body">
+                                                <img src="../harvest/resources/interface/manager2.png" alt="Secret Storage" class="image-zoomable">
+                                            </div>
+                                        </div>
+                                        <div class="interface-card-item">
+                                            <div class="interface-card-top">03 | Audit Trail Logs</div>
+                                            <div class="interface-card-body">
+                                                <img src="../harvest/resources/interface/manager3.png" alt="Audit Logs" class="image-zoomable">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STAGE 3: SECURITY ECOSYSTEM -->
+                        <div class="showcase-stage stage-tech">
+                            <div class="stage-tech-grid">
+                                <div class="tech-3d-card">
+                                    <div class="tech-card-top">
+                                        <img src="../contest-management-java/resources/icons/JavaFX_Logo.png" alt="JavaFX" class="tech-icon-img">
+                                        <span class="tech-tag">UI Layer</span>
+                                    </div>
+                                    <h4>JavaFX 21</h4>
+                                    <p>Encrypted UI views with custom biometric key prompts and hardware auth dialogs.</p>
+                                </div>
+
+                                <div class="tech-3d-card">
+                                    <div class="tech-card-top">
+                                        <img src="../contest-management-java/resources/icons/Log4j-png.webp" alt="Log4j2" class="tech-icon-img">
+                                        <span class="tech-tag">Audit Log</span>
+                                    </div>
+                                    <h4>Log4j2 Security Audit</h4>
+                                    <p>Tamper-proof encrypted log stream capturing authentication attempts and key rotations.</p>
+                                </div>
+
+                                <div class="tech-3d-card">
+                                    <div class="tech-card-top">
+                                        <img src="../images/SQLite370.svg.png" alt="SQLite" class="tech-icon-img">
+                                        <span class="tech-tag">Encrypted DB</span>
+                                    </div>
+                                    <h4>SQLCipher / SQLite</h4>
+                                    <p>AES-256 encrypted database file storing zero-knowledge secret keys and credentials.</p>
+                                </div>
+
+                                <div class="tech-3d-card">
+                                    <div class="tech-card-top">
+                                        <img src="../../shared/resources/images/gradle.webp" alt="Gradle" class="tech-icon-img">
+                                        <span class="tech-tag">Build Tool</span>
+                                    </div>
+                                    <h4>Groovy Gradle</h4>
+                                    <p>Automated build security scanning, static code analysis, and native packaging.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Showcase Section -->
+            <div class="section-header-wrap reveal">
+                <span class="bauhaus-dot"></span>
+                <h2 class="section-header">Recorded Video Demo</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="media-box reveal" style="margin-bottom: 50px;">
+                <div class="media-box-header">VaultGuard Security Application Demo</div>
+                <video autoplay loop muted playsinline class="image-container">
+                    <source src="../contest-management-java/resources/JavaRec.mov" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Technology Cards Grid Section -->
+            <div class="section-header-wrap reveal">
+                <span class="bauhaus-dot"></span>
+                <h2 class="section-header">Technologies & Architecture</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="tech-grid reveal">
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img src="../contest-management-java/resources/icons/JavaFX_Logo.png" alt="JavaFX" class="tech-icon-img">
+                        <span class="tech-tag">Desktop UI</span>
+                    </div>
+                    <h4>JavaFX & FXML</h4>
+                    <p>Desktop graphical user interface constructed with FXML SceneBuilder layouts and CSS styling.</p>
+                </div>
+
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img src="../../shared/resources/images/gradle.webp" alt="Gradle" class="tech-icon-img">
+                        <span class="tech-tag">Build Tool</span>
+                    </div>
+                    <h4>Groovy Gradle</h4>
+                    <p>Automated task orchestration, dependency management, and build artifact generation.</p>
+                </div>
+
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img src="../contest-management-java/resources/icons/Log4j-png.webp" alt="Log4j2" class="tech-icon-img">
+                        <span class="tech-tag">Logging</span>
+                    </div>
+                    <h4>Log4j2 Pipeline</h4>
+                    <p>Enterprise logging with dual rolling file appenders and color-coded console output.</p>
+                </div>
+
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img src="../images/SQLite370.svg.png" alt="SQLite" class="tech-icon-img">
+                        <span class="tech-tag">Database</span>
+                    </div>
+                    <h4>SQLite Database</h4>
+                    <p>Embedded ACID-compliant SQL database with DAO / Repository pattern data access.</p>
+                </div>
+            </div>
+
+            <!-- Tech Stack Slider Box -->
+            <div class="tech-slider-box reveal">
+                <div class="tech-slider-header">Technologies Used</div>
+                <div class="tech-slider">
+                    <div class="tech-track">
+                        <div class="tech-item"><img src="../contest-management-java/resources/icons/JavaFX_Logo.png" alt="JavaFX"></div>
+                        <div class="tech-item"><img src="../../shared/resources/images/gradle.webp" alt="Gradle"></div>
+                        <div class="tech-item"><img src="../contest-management-java/resources/icons/Log4j-png.webp" alt="Log4j"></div>
+                        <div class="tech-item"><img src="../images/SQLite370.svg.png" alt="SQLite"></div>
+                        <!-- Loop duplicates for continuous scroll -->
+                        <div class="tech-item"><img src="../contest-management-java/resources/icons/JavaFX_Logo.png" alt="JavaFX"></div>
+                        <div class="tech-item"><img src="../../shared/resources/images/gradle.webp" alt="Gradle"></div>
+                        <div class="tech-item"><img src="../contest-management-java/resources/icons/Log4j-png.webp" alt="Log4j"></div>
+                        <div class="tech-item"><img src="../images/SQLite370.svg.png" alt="SQLite"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Rzv. Built with Bauhaus Minimalism & Clean Code.</p>
+        </footer>
+    </div>
+
+    <dialog id="lightbox">
+        <button id="close-lightbox">&times;</button>
+        <img src="" id="lightbox-img" alt="Enlarged preview">
+    </dialog>
+    <script src="../../shared/js/main.js"></script>
+    <script src="../../scripts/vaultGuard-dynamic.js"></script>
+</body>
+</html>

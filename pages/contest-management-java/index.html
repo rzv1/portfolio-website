@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Management Java - Razvan Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../shared/css/project-page.css">
+    <link rel="icon" href="../../shared/resources/icons/favicon.svg"></head>
+<body>
+    <canvas class="bg-rift" aria-hidden="true"></canvas>
+    <div class="page">
+        <!-- Bauhaus Navbar -->
+        <nav class="navbar">
+            <div class="navbar-buttons">
+                <div class="navbar-button active"><a href="../projects/index.html">Projects</a></div>
+                <div class="navbar-button"><a href="../../index.html">Home</a></div>
+                <div class="navbar-button"><a href="../games/index.html">Games</a></div>
+            </div>
+            <button class="theme-toggle-btn" aria-label="Toggle theme">
+                <!-- Icon injected by main.js -->
+            </button>
+        </nav>
+
+        <main class="project-page">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb-wrap">
+                <div class="breadcrumb">
+                    <a href="../projects/index.html">Projects</a> / <span class="breadcrumb-inner">Contest Management Java</span>
+                </div>
+            </div>
+
+            <!-- Bauhaus Project Hero Card -->
+            <section class="project-hero reveal">
+                <div class="project-hero-tag">
+                    <span class="bauhaus-badge">
+                        <span class="bauhaus-dot"></span> JAVA & JAVAFX DESKTOP APP
+                    </span>
+                </div>
+                <h1>Contest Management <span class="accent-text">Java App</span></h1>
+                <p>A JavaFX desktop application designed with strict multi-layered architecture, automated via Groovy Gradle, logged with Log4j2, and powered by SQLite database storage.</p>
+                
+                <div class="project-hero-actions">
+                    <a class="ghlink" href="https://github.com/rzv1/Book-manager-Qt" target="_blank">
+                        <span class="badge" style="padding: 10px 18px; font-size: 0.9rem;">
+                            View Source Code
+                            <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981" style="width: 12px; height: 12px;">
+                                <g transform="scale(-1,1) translate(-200.981,0)">
+                                    <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Architecture & Details Section -->
+            <div class="section-header-wrap reveal">
+                <span class="bauhaus-square"></span>
+                <h2 class="section-header">Architecture & Implementation</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-grid reveal">
+                <!-- Overview Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Overview & Key Highlights</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Built as a academic software assignment focusing on robust object-oriented patterns and clean GUI design.</p>
+                        <ul>
+                            <li><strong>UI Framework:</strong> JavaFX with FXML SceneBuilder views</li>
+                            <li><strong>Build System:</strong> Groovy Gradle dependency management</li>
+                            <li><strong>Logging Pipeline:</strong> Log4j2 structured file & console appenders</li>
+                            <li><strong>Persistence:</strong> Embedded SQLite relational database</li>
+                        </ul>
+                        <div class="pills" style="margin-top: auto;">
+                            <span class="pill">Java</span>
+                            <span class="pill">JavaFX</span>
+                            <span class="pill">Gradle</span>
+                            <span class="pill">Log4j2</span>
+                            <span class="pill">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Log4j System Architecture Media Box -->
+                <div class="media-box">
+                    <div class="media-box-header">Log4j Logging System Architecture</div>
+                    <img class="image-container" src="resources/log4j.png" alt="Log4j Architecture">
+                </div>
+            </div>
+
+            <!-- Video Showcase Section -->
+            <div class="section-header-wrap reveal">
+                <span class="bauhaus-dot"></span>
+                <h2 class="section-header">Recorded Video Demo</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="media-box reveal" style="margin-bottom: 50px;">
+                <div class="media-box-header">JavaFX Application Demo Recording</div>
+                <video autoplay loop muted playsinline class="image-container">
+                    <source src="resources/JavaRec.mov" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Technology Cards Grid Section -->
+            <div class="section-header-wrap reveal">
+                <span class="bauhaus-dot"></span>
+                <h2 class="section-header">Technologies & Architecture</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="tech-grid reveal">
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img src="resources/icons/JavaFX_Logo.png" alt="JavaFX" class="tech-icon-img">
+                        <span class="tech-tag">Desktop UI</span>
+                    </div>
+                    <h4>JavaFX & FXML</h4>
+                    <p>Desktop graphical user interface constructed with FXML SceneBuilder layouts and CSS styling.</p>
+                </div>
+
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img data-icon="gradle" alt="Gradle" class="tech-icon-img">
+                        <span class="tech-tag">Build Tool</span>
+                    </div>
+                    <h4>Groovy Gradle</h4>
+                    <p>Automated task orchestration, dependency management, and build artifact generation.</p>
+                </div>
+
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img src="resources/icons/Log4j-png.webp" alt="Log4j2" class="tech-icon-img">
+                        <span class="tech-tag">Logging</span>
+                    </div>
+                    <h4>Log4j2 Pipeline</h4>
+                    <p>Enterprise logging with dual rolling file appenders and color-coded console output.</p>
+                </div>
+
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img data-icon="sqlite" alt="SQLite" class="tech-icon-img">
+                        <span class="tech-tag">Database</span>
+                    </div>
+                    <h4>SQLite Database</h4>
+                    <p>Embedded ACID-compliant SQL database with DAO / Repository pattern data access.</p>
+                </div>
+
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img data-icon="kotlin" alt="Kotlin" class="tech-icon-img">
+                        <span class="tech-tag">Build Language</span>
+                    </div>
+                    <h4>Programming language</h4>
+                    <p></p>
+                </div>
+
+                <div class="tech-3d-card">
+                    <div class="tech-card-top">
+                        <img data-icon="idea" alt="idea" class="tech-icon-img">
+                        <span class="tech-tag">IDE</span>
+                    </div>
+                    <h4>IDEA IDE</h4>
+                    <p></p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Rzv. Built with Bauhaus Minimalism & Clean Code.</p>
+        </footer>
+    </div>
+
+    <dialog id="lightbox">
+        <button id="close-lightbox">&times;</button>
+        <img src="" id="lightbox-img" alt="Enlarged preview">
+    </dialog>
+    <script type="module" src="../../shared/js/main.js"></script>
+</body>
+</html>

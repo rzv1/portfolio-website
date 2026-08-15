@@ -6,7 +6,8 @@
     <title>Razvan - Portfolio | Software Engineering & Web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles/index.css"/>
+    <link rel="stylesheet" href="shared/css/index.css"/>
+    <link rel="icon" href="shared/resources/icons/favicon.svg">
     <!-- Core Animation & 3D Libraries: Three.js, GSAP, ScrollTrigger, Lenis -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -20,9 +21,9 @@
         <!-- Bauhaus Navbar -->
         <nav class="navbar">
             <div class="navbar-buttons">
-                <div class="navbar-button"><a href="pages/projects.html">Projects</a></div>
+                <div class="navbar-button"><a href="pages/projects/index.html">Projects</a></div>
                 <div class="navbar-button active"><a href="index.html">Home</a></div>
-                <div class="navbar-button"><a href="pages/games.html">Games</a></div>
+                <div class="navbar-button"><a href="pages/games/index.html">Games</a></div>
             </div>
             <button class="theme-toggle-btn" aria-label="Toggle theme">
                 <!-- Icon injected by main.js -->
@@ -37,7 +38,7 @@
                         <span class="bauhaus-dot"></span> COMPUTER SCIENCE STUDENT
                     </span>
                 </div>
-                <h1>Hi! My name is <span class="accent-text">Razvan</span>.</h1>
+                <h1>Hi! I'm <span class="accent-text">Razvan</span>.</h1>
                 <p>Citrus enthusiast. Problem solver. Student. I focus on software development, algorithms, and crafting clean, functional web solutions.</p>
                 
                 <div class="hero-actions-container">
@@ -96,7 +97,7 @@
             <div class="projects-container reveal">
                 <div class="card">
                     <div class="card-header">
-                        <a href="pages/harvest.html"><h3>Harvest</h3></a>
+                        <a href="pages/harvest/index.html"><h3>Harvest</h3></a>
                         <a class="ghlink" href="https://github.com/rzv1/Book-manager-Qt" target="_blank">
                             <span class="badge">
                                 GitHub
@@ -154,7 +155,7 @@
                 </div>
 
                 <div class="moreBtn">
-                    <a href="pages/projects.html">
+                    <a href="pages/projects/index.html">
                         <button class="hbutton">
                             View All Projects
                             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -183,7 +184,6 @@
             <p>© 2025 Rzv. Built with Bauhaus Minimalism & Clean Code.</p>
         </footer>
     </div>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/3d-scroll.js"></script>
+    <script type="module" src="shared/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Razvan Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../shared/css/index.css">
+</head>
+<body>
+    <canvas class="bg-rift" aria-hidden="true"></canvas>
+    <div class="page">
+        <!-- Bauhaus Navbar -->
+        <nav class="navbar">
+            <div class="navbar-buttons">
+                <div class="navbar-button active"><a href="index.html">Projects</a></div>
+                <div class="navbar-button"><a href="../../index.html">Home</a></div>
+                <div class="navbar-button"><a href="../games/index.html">Games</a></div>
+            </div>
+            <button class="theme-toggle-btn" aria-label="Toggle theme">
+                <!-- Icon injected by main.js -->
+            </button>
+        </nav>
+
+        <!-- Projects Header Hero (Matching index.html) -->
+        <section class="hero reveal">
+            <div class="hero-text">
+                <div class="hero-tag">
+                    <span class="bauhaus-badge">
+                        <span class="bauhaus-dot"></span> SELECTED WORKS & EXPERIMENTS
+                    </span>
+                </div>
+                <h1>Software <span class="accent-text">Projects</span></h1>
+                <p>A curated collection of full-stack web applications, desktop software, and interactive web tools engineered with modern frameworks and clean architecture.</p>
+            </div>
+        </section>
+
+        <!-- All Projects Grid Section -->
+        <section id="projects">
+            <div class="section-header-wrap reveal">
+                <span class="bauhaus-square"></span>
+                <h2 class="section-header">Project Portfolio</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-container reveal">
+                <!-- Harvest Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <a href="../harvest/index.html"><h3>Harvest</h3></a>
+                        <a class="ghlink" href="https://github.com/rzv1/Book-manager-Qt" target="_blank">
+                            <span class="badge">
+                                GitHub
+                                <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981">
+                                    <g transform="scale(-1,1) translate(-200.981,0)">
+                                        <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Express + Node.js back-end</li>
+                            <li>PostgreSQL on Supabase</li>
+                            <li>React client architecture</li>
+                        </ul>
+                        <div class="pills">
+                            <span class="pill">React</span>
+                            <span class="pill">Node.js</span>
+                            <span class="pill">Tailwind</span>
+                            <span class="pill">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Website Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Portfolio Website</h3>
+                        <a class="ghlink" href="https://github.com/rzv1/portfolio-website" target="_blank">
+                            <span class="badge">
+                                GitHub
+                                <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981">
+                                    <g transform="scale(-1,1) translate(-200.981,0)">
+                                        <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Embedded live web demos</li>
+                            <li>Bauhaus design system</li>
+                            <li>Dark & Light theme system</li>
+                        </ul>
+                        <div class="pills">
+                            <span class="pill">HTML5</span>
+                            <span class="pill">CSS3</span>
+                            <span class="pill">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ToDo App Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <a href="../todo-app/index.html"><h3>ToDo Web App</h3></a>
+                        <a class="ghlink" href="https://github.com/rzv1/portfolio-website" target="_blank">
+                            <span class="badge">
+                                GitHub
+                                <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981">
+                                    <g transform="scale(-1,1) translate(-200.981,0)">
+                                        <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Powered by LocalStorage</li>
+                            <li>Interactive modular JS</li>
+                            <li>Webpack build pipeline</li>
+                        </ul>
+                        <div class="pills">
+                            <span class="pill">HTML</span>
+                            <span class="pill">CSS</span>
+                            <span class="pill">JS</span>
+                            <span class="pill">Webpack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaFX App Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <a href="../contest-management-java/index.html"><h3>JavaFX App</h3></a>
+                        <a class="ghlink" href="https://github.com/rzv1/Book-manager-Qt" target="_blank">
+                            <span class="badge">
+                                GitHub
+                                <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981">
+                                    <g transform="scale(-1,1) translate(-200.981,0)">
+                                        <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Layered architecture</li>
+                            <li>Log4j logging pipeline</li>
+                            <li>SQLite database backend</li>
+                        </ul>
+                        <div class="pills">
+                            <span class="pill">Java</span>
+                            <span class="pill">JavaFX</span>
+                            <span class="pill">Gradle</span>
+                            <span class="pill">Log4j</span>
+                            <span class="pill">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avalonia App Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <a href="../contest-management-avalonia/index.html"><h3>Avalonia C# App</h3></a>
+                        <a class="ghlink" href="https://github.com/rzv1/C-CLI_app" target="_blank">
+                            <span class="badge">
+                                GitHub
+                                <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981">
+                                    <g transform="scale(-1,1) translate(-200.981,0)">
+                                        <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Cross-platform Avalonia UI</li>
+                            <li>Clean layered architecture</li>
+                            <li>Log4net & SQLite integration</li>
+                        </ul>
+                        <div class="pills">
+                            <span class="pill">C#</span>
+                            <span class="pill">.NET</span>
+                            <span class="pill">Avalonia</span>
+                            <span class="pill">Log4net</span>
+                            <span class="pill">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VaultGuard Security App Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <a href="../vault-guard/index.html"><h3>VaultGuard App</h3></a>
+                        <a class="ghlink" href="https://github.com/rzv1/Book-manager-Qt" target="_blank">
+                            <span class="badge">
+                                GitHub
+                                <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981">
+                                    <g transform="scale(-1,1) translate(-200.981,0)">
+                                        <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>AES-256 GCM cipher pipeline</li>
+                            <li>SQLCipher encrypted SQLite DB</li>
+                            <li>Log4j2 tamper-proof audit log</li>
+                        </ul>
+                        <div class="pills">
+                            <span class="pill">Java</span>
+                            <span class="pill">JavaFX</span>
+                            <span class="pill">AES-256</span>
+                            <span class="pill">Log4j2</span>
+                            <span class="pill">SQLCipher</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FlowX Trading App Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <a href="../flow-x/index.html"><h3>FlowX Trading App</h3></a>
+                        <a class="ghlink" href="https://github.com/rzv1/Book-manager-Qt" target="_blank">
+                            <span class="badge">
+                                GitHub
+                                <svg class="card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.981 200.981">
+                                    <g transform="scale(-1,1) translate(-200.981,0)">
+                                        <polygon points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068 10.271,17.515 193.72,200.981 200.974,193.727"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>WebSocket real-time market feeds</li>
+                            <li>JavaFX candlestick charting engine</li>
+                            <li>Low-latency order execution DB</li>
+                        </ul>
+                        <div class="pills">
+                            <span class="pill">Java 21</span>
+                            <span class="pill">JavaFX</span>
+                            <span class="pill">WebSockets</span>
+                            <span class="pill">SQLite</span>
+                            <span class="pill">Log4j2</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Rzv. Built with Bauhaus Minimalism & Clean Code.</p>
+        </footer>
+    </div>
+    <script type="module" src="../../shared/js/main.js"></script>
+</body>
+</html>
