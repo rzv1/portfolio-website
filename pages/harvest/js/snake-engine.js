@@ -128,9 +128,34 @@ export function initScrollSnakeEngine(section) {
         buildGridPath(width, height, step);
         if (gridPath.length < 2) return;
 
-        // Interpolate snake head position along grid path
+        // Interpolate snake head position along grid path synced with GSAP stage transitions
         const maxIndex = gridPath.length - 1;
-        const targetHeadIndex = Math.min(Math.max(scrollProgress * maxIndex, 0), maxIndex);
+
+        const p1Norm = nodeIndices.node1 / maxIndex;
+        const p2Norm = nodeIndices.node2 / maxIndex;
+        const p3Norm = nodeIndices.node3 / maxIndex;
+
+        // Stage transition progress keyframes matching master-timeline sequence
+        const t1 = 0.233; // Stage 1 exit / Node 1 arrival
+        const t2 = 0.657; // Stage 2 Manager swap / Node 2 arrival
+        const t3 = 0.881; // Stage 3 Tech enter / Node 3 arrival
+
+        let syncedProgress = scrollProgress;
+        if (scrollProgress <= 0) {
+            syncedProgress = 0;
+        } else if (scrollProgress >= 1) {
+            syncedProgress = 1;
+        } else if (scrollProgress <= t1) {
+            syncedProgress = (scrollProgress / t1) * p1Norm;
+        } else if (scrollProgress <= t2) {
+            syncedProgress = p1Norm + ((scrollProgress - t1) / (t2 - t1)) * (p2Norm - p1Norm);
+        } else if (scrollProgress <= t3) {
+            syncedProgress = p2Norm + ((scrollProgress - t2) / (t3 - t2)) * (p3Norm - p2Norm);
+        } else {
+            syncedProgress = p3Norm + ((scrollProgress - t3) / (1 - t3)) * (1 - p3Norm);
+        }
+
+        const targetHeadIndex = Math.min(Math.max(syncedProgress * maxIndex, 0), maxIndex);
         const headInt = Math.floor(targetHeadIndex);
 
         // Check Node eating triggers
